@@ -1,27 +1,32 @@
-# Chatbot — Internet Technologies micro-site
+# Chatbot — Internet Technologies
 
-This small micro-site contains our group's presentation and a short tutorial about chatbots for the Internet Technologies course.
+Website for Coursework 01 of the Internet Technologies module at UWS: includes a group presentation and a chatbot tutorial.
 
-Files
-- `index.html` — landing/welcome page (this is the site root).
-- `styles.css` — site styling (already added).
-- `presentation/` — (create this folder) place `group-presentation.pdf` or an interactive `index.html` for the slides.
+**Online Access**
 
-How to view
+[https://antoineprr.github.io/chatbot/](https://antoineprr.github.io/chatbot/)
 
-- Option 1: Open `index.html` directly in your browser (double-click the file).
-- Option 2 (recommended for some features like fetch or local includes): run a simple HTTP server from the project root.
+**Main Files**
 
-If you have Python 3 installed, run:
+* `index.html` — homepage
+* `styles.css` — site styles
+* to be added
 
-```pwsh
-# from the project root
-python -m http.server 8000
-# then open http://localhost:8000 in your browser
-```
+### View Locally
 
-Replace placeholders
+#### 1. By directly opening the `index.html` file
 
-- Edit `index.html` to add group member names, course/semester details, and replace the placeholder links in `presentation/` with your actual files.
+* Navigate to the project folder.
+* Double-click the `index.html` file to open it in a browser.
 
-Need help or want an interactive demo added? Open an issue or ask and I'll help wire up a small JS demo or host the slides.
+**Note:** Some advanced features (like file loading via JavaScript) may not work properly in `file://` mode. For the full experience, it's recommended to use a local server (such as Live Server).
+
+#### 2. With Visual Studio Code and the Live Server extension
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/) if you haven’t already.
+2. Open the project folder in VS Code.
+3. Install the **Live Server** extension from the Marketplace:
+   [Live Server — VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+4. Click the **"Go Live"** button at the bottom right of the editor.
+5. The site will automatically open in your browser at an address like:
+   `http://127.0.0.1:5500/`
