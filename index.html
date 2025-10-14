@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chatbot Group Presentation</title>
+  <title>Internet Technologies — Chatbot Group</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
       <h1>Internet Technologies — Chatbot</h1>
-      <p class="tagline">Group presentation and tutorial</p>
+      <p class="tagline">Group presentation and a short tutorial on chatbots</p>
       <nav>
         <ul class="nav">
-          <li><a href="#presentation">Presentation</a></li>
-          <li><a href="#tutorial">Tutorial</a></li>
-          <li><a href="#resources">Resources</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="/presentation.html">Presentation</a></li>
+          <li><a href="/tutorial.html">Quick Tutorial</a></li>
+          <li><a href="/resources.html">Resources</a></li>
+          <li><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </div>
@@ -25,8 +25,57 @@
   <main class="container">
     <section id="welcome" class="hero">
       <h2>Welcome</h2>
-      <p>Welcome to our website created for the Internet Technologies course. Use the links below to view our group presentation on chatbots.</p>
+      <p>Welcome to our micro-site created for the Internet Technologies course. Use the links below to view our group presentation on chatbots and a quick hands-on tutorial.</p>
       <p><a class="cta" href="#presentation">View Presentation</a></p>
+    </section>
+
+    <section id="presentation">
+      <h2>Group Presentation</h2>
+      <p>Our group's slides and materials are linked below. Replace the placeholder link with your actual presentation file (e.g., PDF or HTML).</p>
+      <ul>
+        <li><a href="presentation/group-presentation.pdf" target="_blank" rel="noopener">Download slides (PDF) — placeholder</a></li>
+        <li><a href="presentation/index.html" target="_blank" rel="noopener">Interactive presentation (HTML) — optional</a></li>
+      </ul>
+    </section>
+
+    <section id="tutorial">
+      <h2>Quick Tutorial — Chatbots 101</h2>
+      <ol>
+        <li><strong>What is a chatbot?</strong> A chatbot is a program that interacts with users using natural language.</li>
+        <li><strong>Types:</strong> Rule-based, retrieval-based, generative (large language models).</li>
+        <li><strong>Basic flow:</strong> Input → Intent detection → Response generation → Output</li>
+        <li><strong>Try it:</strong> Follow the minimal example below or build an interactive demo in `presentation/`.</li>
+      </ol>
+
+      <details>
+        <summary>Minimal JS example (client-side)</summary>
+        <pre><code>// Minimal rule-based example (client-side)
+const botResponses = {
+  hello: "Hi! I'm a demo chatbot. Ask me about chatbots.",
+  chatbot: "Chatbots are programs that can converse. Types include rule-based and AI-based."
+};
+function respond(message) {
+  const m = message.toLowerCase();
+  const key = m.match(/\b(hello|chatbot)\b/);
+  return key ? botResponses[key[1]] : "Sorry, I don't understand. Try 'hello' or 'chatbot'.";
+}
+// Usage: respond('hello');
+</code></pre>
+      </details>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Chatbot" target="_blank" rel="noopener">Chatbot — Wikipedia</a></li>
+        <li><a href="https://developers.google.com/machine-learning" target="_blank" rel="noopener">Machine learning (developers)</a></li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About this project</h2>
+      <p>Authors: [Replace with group member names]</p>
+      <p>Course: Internet Technologies — [Semester]</p>
     </section>
   </main>
 
