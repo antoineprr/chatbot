@@ -161,43 +161,25 @@ pre {
 
 /* === Images === */
 .slide-image {
-  width: 100%;
-  height: auto;
+  display: block;  
+  max-width: 100%; 
+  width: auto;     
+  height: auto;    
+  max-height: 400px;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   box-shadow: var(--shadow);
 }
 
-/* === Image sizing helpers ===
-   Usage:
-   - To show the image at its original dimensions but still prevent it from overflowing the container:
-       <img class="slide-image slide-image-original" src="...">
-   - To force the image to render at its native pixel size (may overflow and create scrollbars):
-       <img class="slide-image slide-image-native" src="...">
-   - To limit the displayed height while keeping the aspect ratio (useful for tall slides):
-       <img class="slide-image slide-image-limited" src="...">
-*/
-
-.slide-image-original {
-  width: auto;        /* keep natural width */
-  height: auto;       /* keep natural height */
-  max-width: 100%;    /* but don't overflow the container horizontally */
-  max-height: none;   /* no artificial height limit */
-}
-
-.slide-image-native {
-  width: auto;        /* render at native pixels */
-  height: auto;
-  max-width: none;    /* allow overflow if the image is wider than the container */
-  max-height: none;
-}
-
-.slide-image-limited {
-  width: auto;             /* do not stretch to container width */
-  height: auto;
-  max-width: 100%;         /* never exceed container width */
-  max-height: 600px;       /* change this value to the maximum height you want */
-  object-fit: contain;     /* preserve aspect ratio */
+.small-screenshot {
+  display: block;  
+  max-width: 100%; 
+  width: auto;     
+  height: auto;    
+  max-height: 200px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
 }
 
 /* === Footer === */
