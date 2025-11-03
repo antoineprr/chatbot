@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tutorial - Internet Technologies</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container">
@@ -27,7 +29,7 @@
     <section>
       <h2>Tutorial: Building Your First Chatbot with Chatling</h2>
       <p>
-        This guide walks you through the process of creating a simple chatbot using 
+        This guide walks you through the process of creating a simple chatbot using
         <strong>Chatling</strong>, a no-code online chatbot builder.
       </p>
     </section>
@@ -37,38 +39,43 @@
       <ul>
         <li>Go to <a href="https://chatling.ai" target="_blank">chatling.ai</a> and create an account.</li>
         <li>From the dashboard, select <strong>AI Chatbot</strong>.</li>
+        <img src="assets/dashboard.png" alt="Dashboard" class="slide-image">
         <li>Choose <strong>Web</strong> as your platform.</li>
+        <img src="assets/platform.png" alt="Platform" class="slide-image">
         <li>Select <strong>Start from scratch</strong> to build manually.</li>
+        <img src="assets/creation-options.png" alt="Creation Options" class="slide-image">
         <li>Give your chatbot a name, for example: <em>Paisley Games Bot</em>.</li>
+        <img src="assets/bot-name.png" alt="Bot name" class="slide-image">
       </ul>
-      <p>Once created, you’ll be redirected to your dashboard, where you can access the builder and all customization settings.</p>
+      <p>Once created, you’ll be redirected to your dashboard, where you can access the builder and all customization
+        settings.</p>
     </section>
 
     <section>
       <h3>Step 2: Build the conversation flow</h3>
       <p>
-        In the <strong>Builder</strong> section, you’ll design the chatbot’s conversation visually 
-        using drag-and-drop blocks.  
-        Your finished workflow should look like this:
-        <br><em>Start → Welcome → Answer → Loop → End</em>
+        In the <strong>Builder</strong> section, you’ll design the chatbot’s conversation visually
+        using drag-and-drop blocks.
       </p>
+      <img src="assets/drag-drop.png" alt="Drag and drop menu" class="slide-image">
 
       <h4>Block 1: Welcome</h4>
       <p><strong>Message example:</strong></p>
       <blockquote>
         Hello there! I’m the <strong>Paisley Games Bot</strong>.<br>
-        I can tell you all about the Highland Games of Paisley — the events, history, traditions, 
+        I can tell you all about the Highland Games of Paisley — the events, history, traditions,
         and how to join!<br>
         What would you like to know?
       </blockquote>
+      <img src="assets/bloc1.png" alt="Flow bloc one" class="slide-image">
 
       <h4>Block 2: Answer</h4>
       <p>
         This block captures the user’s question and uses AI to generate a reply.
-        <br>Make sure to:
       </p>
       <ul>
         <li>Add a <strong>question</strong> field to collect user input.</li>
+          <img src="assets/variable-save.png" alt="Variable use question" class="slide-image">
         <li>Connect it to a <strong>AI Response</strong> block, so the AI can respond.</li>
         <p>
           To make your chatbot respond properly, you need to configure the AI prompt and connect it
@@ -79,21 +86,23 @@
           <li>Click on the <strong>Answer</strong> block.</li>
           <li>In the settings panel, find the <strong>AI Prompt</strong> field.</li>
           <li>
-            Ensure <strong>Use Knowledge Base</strong> is selected.  
+            Ensure <strong>Use Knowledge Base</strong> is selected.
             This lets Chatling use the information you uploaded (texts, PDFs, or website data).
+            And use the following parameters:
           </li>
-          <li>Enter a short instruction to guide the AI.  
+          <img src="assets/ai-instruction.png" alt="Promt AI Response" class="slide-image">
+          <li>Enter a short instruction to guide the AI.
             <br><strong>Example Prompt:</strong>
             <blockquote>
-              You are the <strong>Paisley Games Bot</strong>, a friendly expert on the fictional 
-              Highland Games of Paisley.  
-              Answer questions clearly and cheerfully, in a Scottish-inspired tone.
+              You are the <strong>Paisley Games Bot</strong>, a friendly expert on the fictional
+              Highland Games of Paisley.
+              Answer {questions} clearly and cheerfully, in a Scottish-inspired tone.
             </blockquote>
           </li>
-
         </ol>
         <li>Link this block to the next one.</li>
       </ul>
+      <img src="assets/bloc2.JPG" alt="Flow bloc two" class="slide-image">
 
       <h4>Block 3: Loop</h4>
       <p>
@@ -108,6 +117,7 @@
         <li>Yes → Goes back to the <strong>Answer</strong> block</li>
         <li>No → Goes to the final message block</li>
       </ul>
+      <img src="assets/bloc3.png" alt="Flow bloc 3" class="slide-image">
 
       <h4>Block 4: End / Group #1</h4>
       <blockquote>
@@ -121,7 +131,7 @@
     <section>
       <h3>Step 3: Add knowledge or content</h3>
       <p>
-        If you want your bot to answer real questions, go to the 
+        If you want your bot to answer real questions, go to the
         <strong>Knowledge Base</strong> section in Chatling and add some text or documents.
         For example, you could include:
       </p>
@@ -130,27 +140,30 @@
         <li>FAQs, event schedule, or contact info</li>
         <li>Links to your website or official sources</li>
       </ul>
+      <img src="assets/data-knowledge.png" alt="Data integration" class="slide-image">
     </section>
 
-<section>
-    <h3>Step 4: Deploy your chatbot</h3>
-    <p>
-      Once your flow is ready and your AI responses are configured, it’s time to make your bot available 
-      to users. You can deploy it directly from your Chatling dashboard:
-    </p>
+    <section>
+      <h3>Step 4: Deploy your chatbot</h3>
+      <p>
+        Once your flow is ready and your AI responses are configured, it’s time to make your bot available
+        to users. You can deploy it directly from your Chatling dashboard:
+      </p>
 
-    <ol>
-      <li>Click the <strong>Preview</strong> button to test your chatbot in real time.</li>
-      <li>If everything works as expected, click <strong>Publish</strong> to activate it.</li>
-      <li>Go to <strong>Add to Website</strong> in the left menu to deploy the bot.</li>
-      <li>Choose your preferred format</li>
-      <li>Copy the provided HTML script and paste it in your website code.</li>
-    </ol>
-    <p>
-      Once deployed, your <strong>Paisley Games Bot</strong> will be ready to chat with visitors and 
-      answer questions about the Highland Games of Paisley in real time!
-    </p>
-  </section>
+      <ol>
+        <li>Click the <strong>Preview</strong> button to test your chatbot in real time.</li>
+        <li>If everything works as expected, click <strong>Publish</strong> to activate it.</li>
+        <li>Go to <strong>Add to Website</strong> in the left menu to deploy the bot.</li>
+        <li>Choose your preferred format</li>
+        <img src="assets/add-website.png" alt="Add website" class="slide-image">
+        <li>Copy the provided HTML script and paste it in your website code.</li>
+        <img src="assets/code-bot.png" alt="Insertion code" class="slide-image">
+      </ol>
+      <p>
+        Once deployed, your <strong>Paisley Games Bot</strong> will be ready to chat with visitors and
+        answer questions about the Highland Games of Paisley in real time!
+      </p>
+    </section>
   </main>
 
 
@@ -160,6 +173,8 @@
     </div>
   </footer>
   <script> window.chtlConfig = { chatbotId: "3177553141" } </script>
-<script async data-id="3177553141" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <script async data-id="3177553141" id="chtl-script" type="text/javascript"
+    src="https://chatling.ai/js/embed.js"></script>
 </body>
+
 </html>
