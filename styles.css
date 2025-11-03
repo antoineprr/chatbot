@@ -31,3 +31,9 @@ pre{background:#0b1220;color:#e6eef8;padding:1rem;border-radius:8px;overflow:aut
   .nav{flex-wrap:wrap}
   .site-header h1{font-size:1.25rem}
 }
+.slide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
