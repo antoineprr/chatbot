@@ -22,6 +22,5 @@ How to view locally
 Notes
 - The website is intentionally simple and intended for demonstration and coursework use.
 
-
 Credits
 - Author: antoineprr
