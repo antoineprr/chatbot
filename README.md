@@ -1,4 +1,4 @@
-# Chatbot — Internet Technologies (Course Project)
+# Chatbot - Internet Technologies (Course Project)
 
 This repository contains a small static website created for an Internet Technologies coursework assignment. It includes a tutorial on chatbots, a group presentation page, references, and supporting assets.
 
