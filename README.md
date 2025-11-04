@@ -8,13 +8,13 @@ Quick summary
 - Assets (presentation slides, images) are in the `assets/` folder
 
 Project structure
-- `index.html` — Home page
-- `tutorial.html` — Chatbot tutorial
-- `presentation.html` — Group presentation
-- `about.html` — About / course information
-- `references.html` — Bibliography and links
-- `styles.css` — Site-wide styles
-- `assets/` — Images and other static resources
+- `index.html` - Home page
+- `tutorial.html` - Chatbot tutorial
+- `presentation.html` - Group presentation
+- `about.html` - About / course information
+- `references.html` - Bibliography and links
+- `styles.css` - Site-wide styles
+- `assets/` - Images and other static resources
 
 How to view locally
 - You use the **Live Server** extension in Visual Studio Code and click "Go Live".
